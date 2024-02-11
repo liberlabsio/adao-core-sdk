@@ -1,0 +1,35 @@
+{
+  "name": "@liberlabsio/adao-core-sdk",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "test": "npx hardhat test",
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "publish:major": "npm version major --tag-version-prefix='' && git push origin master develop --follow-tags",
+    "publish:minor": "npm version minor --tag-version-prefix='' && git push origin master develop --follow-tags",
+    "publish:patch": "npm version patch --tag-version-prefix='' && git push origin master develop --follow-tags"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^6.10.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "chai": "^4.4.1",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.56.0",
+    "hardhat": "^2.19.4",
+    "microbundle": "^0.15.1"
+  },
+  "publishConfig": {
+    "@liberlabsio:registry": "https://npm.pkg.github.com"
+  }
+}

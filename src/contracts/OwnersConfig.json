@@ -1,0 +1,1301 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "threshold",
+          "type": "uint256"
+        }
+      ],
+      "name": "addOwnerWithThreshold",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "threshold",
+          "type": "uint256"
+        }
+      ],
+      "name": "changeThreshold",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "prevOwner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "threshold",
+          "type": "uint256"
+        }
+      ],
+      "name": "removeOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561000f575f80fd5b5061031d8061001d5f395ff3fe608060405234801561000f575f80fd5b506004361061003f575f3560e01c80630d582f1314610043578063694e80c314610058578063f8dc5dd91461006b575b5f80fd5b61005661005136600461026f565b61007e565b005b610056610066366004610297565b61011d565b6100566100793660046102ae565b6101ac565b5f7f8c92395cd5137e684e0c30ec0e205b7d938574a1858934265875d8bb4a472c04604051632e72971f60e11b8152600481018290526001600160a01b03851660248201526044810184905290915073__$3fef9df2457d5cac4efdb487fa63035151$__90635ce52e3e906064015f6040518083038186803b158015610102575f80fd5b505af4158015610114573d5f803e3d5ffd5b50505050505050565b5f7f8c92395cd5137e684e0c30ec0e205b7d938574a1858934265875d8bb4a472c04604051634649b23560e11b8152600481018290526024810184905290915073__$3fef9df2457d5cac4efdb487fa63035151$__90638c93646a906044015f6040518083038186803b158015610192575f80fd5b505af41580156101a4573d5f803e3d5ffd5b505050505050565b5f7f8c92395cd5137e684e0c30ec0e205b7d938574a1858934265875d8bb4a472c0460405163a8ac496d60e01b8152600481018290526001600160a01b038087166024830152851660448201526064810184905290915073__$3fef9df2457d5cac4efdb487fa63035151$__9063a8ac496d906084015f6040518083038186803b158015610238575f80fd5b505af415801561024a573d5f803e3d5ffd5b5050505050505050565b80356001600160a01b038116811461026a575f80fd5b919050565b5f8060408385031215610280575f80fd5b61028983610254565b946020939093013593505050565b5f602082840312156102a7575f80fd5b5035919050565b5f805f606084860312156102c0575f80fd5b6102c984610254565b92506102d760208501610254565b915060408401359050925092509256fea2646970667358221220e056f11216067906d1c6a99c314389a5acdb7d60e4433a8b3bf9a41712fec3d364736f6c63430008140033",
+    "sourceMap": "119:925:62:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {
+      "src/ownership/OwnersLibrary.sol": {
+        "OwnersLibrary": [
+          {
+            "start": 236,
+            "length": 20
+          },
+          {
+            "start": 380,
+            "length": 20
+          },
+          {
+            "start": 546,
+            "length": 20
+          }
+        ]
+      }
+    }
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561000f575f80fd5b506004361061003f575f3560e01c80630d582f1314610043578063694e80c314610058578063f8dc5dd91461006b575b5f80fd5b61005661005136600461026f565b61007e565b005b610056610066366004610297565b61011d565b6100566100793660046102ae565b6101ac565b5f7f8c92395cd5137e684e0c30ec0e205b7d938574a1858934265875d8bb4a472c04604051632e72971f60e11b8152600481018290526001600160a01b03851660248201526044810184905290915073__$3fef9df2457d5cac4efdb487fa63035151$__90635ce52e3e906064015f6040518083038186803b158015610102575f80fd5b505af4158015610114573d5f803e3d5ffd5b50505050505050565b5f7f8c92395cd5137e684e0c30ec0e205b7d938574a1858934265875d8bb4a472c04604051634649b23560e11b8152600481018290526024810184905290915073__$3fef9df2457d5cac4efdb487fa63035151$__90638c93646a906044015f6040518083038186803b158015610192575f80fd5b505af41580156101a4573d5f803e3d5ffd5b505050505050565b5f7f8c92395cd5137e684e0c30ec0e205b7d938574a1858934265875d8bb4a472c0460405163a8ac496d60e01b8152600481018290526001600160a01b038087166024830152851660448201526064810184905290915073__$3fef9df2457d5cac4efdb487fa63035151$__9063a8ac496d906084015f6040518083038186803b158015610238575f80fd5b505af415801561024a573d5f803e3d5ffd5b5050505050505050565b80356001600160a01b038116811461026a575f80fd5b919050565b5f8060408385031215610280575f80fd5b61028983610254565b946020939093013593505050565b5f602082840312156102a7575f80fd5b5035919050565b5f805f606084860312156102c0575f80fd5b6102c984610254565b92506102d760208501610254565b915060408401359050925092509256fea2646970667358221220e056f11216067906d1c6a99c314389a5acdb7d60e4433a8b3bf9a41712fec3d364736f6c63430008140033",
+    "sourceMap": "119:925:62:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;424:210;;;;;;:::i;:::-;;:::i;:::-;;640:176;;;;;;:::i;:::-;;:::i;822:220::-;;;;;;:::i;:::-;;:::i;424:210::-;508:38;261:66:63;585:42:62;;-1:-1:-1;;;585:42:62;;;;;1212:25:68;;;-1:-1:-1;;;;;1273:32:68;;1253:18;;;1246:60;1322:18;;;1315:34;;;508:60:62;;-1:-1:-1;585:24:62;;;;1185:18:68;;585:42:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;578:49;424:210;;:::o;640:176::-;703:38;261:66:63;780:29:62;;-1:-1:-1;;;780:29:62;;;;;1575:25:68;;;1616:18;;;1609:34;;;703:60:62;;-1:-1:-1;780:18:62;;;;1548::68;;780:29:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;773:36;640:176;:::o;822:220::-;915:38;261:66:63;992:43:62;;-1:-1:-1;;;992:43:62;;;;;1926:25:68;;;-1:-1:-1;;;;;2025:15:68;;;2005:18;;;1998:43;2077:15;;2057:18;;;2050:43;2109:18;;;2102:34;;;915:60:62;;-1:-1:-1;992:14:62;;;;1898:19:68;;992:43:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;985:50;822:220;;;:::o;14:173:68:-;82:20;;-1:-1:-1;;;;;131:31:68;;121:42;;111:70;;177:1;174;167:12;111:70;14:173;;;:::o;192:254::-;260:6;268;321:2;309:9;300:7;296:23;292:32;289:52;;;337:1;334;327:12;289:52;360:29;379:9;360:29;:::i;:::-;350:39;436:2;421:18;;;;408:32;;-1:-1:-1;;;192:254:68:o;451:180::-;510:6;563:2;551:9;542:7;538:23;534:32;531:52;;;579:1;576;569:12;531:52;-1:-1:-1;602:23:68;;451:180;-1:-1:-1;451:180:68:o;636:328::-;713:6;721;729;782:2;770:9;761:7;757:23;753:32;750:52;;;798:1;795;788:12;750:52;821:29;840:9;821:29;:::i;:::-;811:39;;869:38;903:2;892:9;888:18;869:38;:::i;:::-;859:48;;954:2;943:9;939:18;926:32;916:42;;636:328;;;;;:::o",
+    "linkReferences": {
+      "src/ownership/OwnersLibrary.sol": {
+        "OwnersLibrary": [
+          {
+            "start": 207,
+            "length": 20
+          },
+          {
+            "start": 351,
+            "length": 20
+          },
+          {
+            "start": 517,
+            "length": 20
+          }
+        ]
+      }
+    }
+  },
+  "methodIdentifiers": {
+    "addOwnerWithThreshold(address,uint256)": "0d582f13",
+    "changeThreshold(uint256)": "694e80c3",
+    "removeOwner(address,address,uint256)": "f8dc5dd9"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"threshold\",\"type\":\"uint256\"}],\"name\":\"addOwnerWithThreshold\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"threshold\",\"type\":\"uint256\"}],\"name\":\"changeThreshold\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"prevOwner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"threshold\",\"type\":\"uint256\"}],\"name\":\"removeOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/ownership/OwnersConfig.sol\":\"OwnersConfig\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":account-abstraction/=lib/account-abstraction/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solidity-bytes-utils/=lib/solidity-bytes-utils/\"]},\"sources\":{\"src/ownership/OwnersConfig.sol\":{\"keccak256\":\"0x0c6188229138de23767718c4de0f929cbafd8e172784aca66c8b9d2412169173\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://f4ed71f2d16963c24e8d1e6115868d956b19377944dab0999ca35e746346fcc2\",\"dweb:/ipfs/QmNZLiV6o5pC1a2aFdZmA3RQhovhWzS9othMM5THwWb5Ah\"]},\"src/ownership/OwnersLibrary.sol\":{\"keccak256\":\"0x046d25afcb1cd89c06a0d3014660c9aff2f29fe158f0746b26f74a3aa1b7a551\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://b05530379e26e79b2b13f1fdd3c80202e164845da515ad391ec5a8fb21b37396\",\"dweb:/ipfs/QmNvQyAPYA9aYJWLuWaGUMBBwyq7C5HfDkje3q6BXR99n6\"]},\"src/utils/Contracts.sol\":{\"keccak256\":\"0x256ea1ce6e8512b0c5ce2ab155a74a46586ff3be8cc90158d111b272e149d0e2\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://825536c3c2f321c081e1e942bf794fb42c7bf1a0983696435a064d4b7b674005\",\"dweb:/ipfs/QmbGyLVQHCcg2nB2exr4ewCnaVMNHxLSvXTtnyvNEc9rpD\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "threshold",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "addOwnerWithThreshold"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "threshold",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "changeThreshold"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "prevOwner",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "threshold",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "removeOwner"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "account-abstraction/=lib/account-abstraction/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solidity-bytes-utils/=lib/solidity-bytes-utils/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/ownership/OwnersConfig.sol": "OwnersConfig"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/ownership/OwnersConfig.sol": {
+        "keccak256": "0x0c6188229138de23767718c4de0f929cbafd8e172784aca66c8b9d2412169173",
+        "urls": [
+          "bzz-raw://f4ed71f2d16963c24e8d1e6115868d956b19377944dab0999ca35e746346fcc2",
+          "dweb:/ipfs/QmNZLiV6o5pC1a2aFdZmA3RQhovhWzS9othMM5THwWb5Ah"
+        ],
+        "license": "LGPL-3.0-only"
+      },
+      "src/ownership/OwnersLibrary.sol": {
+        "keccak256": "0x046d25afcb1cd89c06a0d3014660c9aff2f29fe158f0746b26f74a3aa1b7a551",
+        "urls": [
+          "bzz-raw://b05530379e26e79b2b13f1fdd3c80202e164845da515ad391ec5a8fb21b37396",
+          "dweb:/ipfs/QmNvQyAPYA9aYJWLuWaGUMBBwyq7C5HfDkje3q6BXR99n6"
+        ],
+        "license": "LGPL-3.0-only"
+      },
+      "src/utils/Contracts.sol": {
+        "keccak256": "0x256ea1ce6e8512b0c5ce2ab155a74a46586ff3be8cc90158d111b272e149d0e2",
+        "urls": [
+          "bzz-raw://825536c3c2f321c081e1e942bf794fb42c7bf1a0983696435a064d4b7b674005",
+          "dweb:/ipfs/QmbGyLVQHCcg2nB2exr4ewCnaVMNHxLSvXTtnyvNEc9rpD"
+        ],
+        "license": "LGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/ownership/OwnersConfig.sol",
+    "id": 34404,
+    "exportedSymbols": {
+      "OwnersConfig": [
+        34403
+      ],
+      "OwnersLibrary": [
+        34863
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:1003:62",
+    "nodes": [
+      {
+        "id": 34317,
+        "nodeType": "PragmaDirective",
+        "src": "42:23:62",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".20"
+        ]
+      },
+      {
+        "id": 34319,
+        "nodeType": "ImportDirective",
+        "src": "67:50:62",
+        "nodes": [],
+        "absolutePath": "src/ownership/OwnersLibrary.sol",
+        "file": "./OwnersLibrary.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 34404,
+        "sourceUnit": 34864,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 34318,
+              "name": "OwnersLibrary",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 34863,
+              "src": "75:13:62",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 34403,
+        "nodeType": "ContractDefinition",
+        "src": "119:925:62",
+        "nodes": [
+          {
+            "id": 34323,
+            "nodeType": "UsingForDirective",
+            "src": "147:52:62",
+            "nodes": [],
+            "global": false,
+            "libraryName": {
+              "id": 34320,
+              "name": "OwnersLibrary",
+              "nameLocations": [
+                "153:13:62"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 34863,
+              "src": "153:13:62"
+            },
+            "typeName": {
+              "id": 34322,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 34321,
+                "name": "OwnersLibrary.OwnersStorage",
+                "nameLocations": [
+                  "171:13:62",
+                  "185:13:62"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 34464,
+                "src": "171:27:62"
+              },
+              "referencedDeclaration": 34464,
+              "src": "171:27:62",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                "typeString": "struct OwnersLibrary.OwnersStorage"
+              }
+            }
+          },
+          {
+            "id": 34336,
+            "nodeType": "FunctionDefinition",
+            "src": "205:213:62",
+            "nodes": [],
+            "body": {
+              "id": 34335,
+              "nodeType": "Block",
+              "src": "296:122:62",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    34330
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 34330,
+                      "mutability": "mutable",
+                      "name": "slot",
+                      "nameLocation": "314:4:62",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 34335,
+                      "src": "306:12:62",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 34329,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "306:7:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 34333,
+                  "initialValue": {
+                    "expression": {
+                      "id": 34331,
+                      "name": "OwnersLibrary",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 34863,
+                      "src": "321:13:62",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_OwnersLibrary_$34863_$",
+                        "typeString": "type(library OwnersLibrary)"
+                      }
+                    },
+                    "id": 34332,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberLocation": "335:19:62",
+                    "memberName": "OWNERS_STORAGE_SLOT",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 34413,
+                    "src": "321:33:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "306:48:62"
+                },
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "373:39:62",
+                    "statements": [
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "387:15:62",
+                        "value": {
+                          "name": "slot",
+                          "nodeType": "YulIdentifier",
+                          "src": "398:4:62"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "os.slot",
+                            "nodeType": "YulIdentifier",
+                            "src": "387:7:62"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "evmVersion": "shanghai",
+                  "externalReferences": [
+                    {
+                      "declaration": 34327,
+                      "isOffset": false,
+                      "isSlot": true,
+                      "src": "387:7:62",
+                      "suffix": "slot",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 34330,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "398:4:62",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 34334,
+                  "nodeType": "InlineAssembly",
+                  "src": "364:48:62"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_getOwnersStorage",
+            "nameLocation": "214:17:62",
+            "parameters": {
+              "id": 34324,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "231:2:62"
+            },
+            "returnParameters": {
+              "id": 34328,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34327,
+                  "mutability": "mutable",
+                  "name": "os",
+                  "nameLocation": "292:2:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34336,
+                  "src": "256:38:62",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                    "typeString": "struct OwnersLibrary.OwnersStorage"
+                  },
+                  "typeName": {
+                    "id": 34326,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 34325,
+                      "name": "OwnersLibrary.OwnersStorage",
+                      "nameLocations": [
+                        "256:13:62",
+                        "270:13:62"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 34464,
+                      "src": "256:27:62"
+                    },
+                    "referencedDeclaration": 34464,
+                    "src": "256:27:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                      "typeString": "struct OwnersLibrary.OwnersStorage"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "255:40:62"
+            },
+            "scope": 34403,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "private"
+          },
+          {
+            "id": 34358,
+            "nodeType": "FunctionDefinition",
+            "src": "424:210:62",
+            "nodes": [],
+            "body": {
+              "id": 34357,
+              "nodeType": "Block",
+              "src": "498:136:62",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    34347
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 34347,
+                      "mutability": "mutable",
+                      "name": "os",
+                      "nameLocation": "544:2:62",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 34357,
+                      "src": "508:38:62",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                        "typeString": "struct OwnersLibrary.OwnersStorage"
+                      },
+                      "typeName": {
+                        "id": 34346,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 34345,
+                          "name": "OwnersLibrary.OwnersStorage",
+                          "nameLocations": [
+                            "508:13:62",
+                            "522:13:62"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 34464,
+                          "src": "508:27:62"
+                        },
+                        "referencedDeclaration": 34464,
+                        "src": "508:27:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                          "typeString": "struct OwnersLibrary.OwnersStorage"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 34350,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 34348,
+                      "name": "_getOwnersStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 34336,
+                      "src": "549:17:62",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_OwnersStorage_$34464_storage_ptr_$",
+                        "typeString": "function () pure returns (struct OwnersLibrary.OwnersStorage storage pointer)"
+                      }
+                    },
+                    "id": 34349,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "549:19:62",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                      "typeString": "struct OwnersLibrary.OwnersStorage storage pointer"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "508:60:62"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 34353,
+                        "name": "owner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34338,
+                        "src": "610:5:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 34354,
+                        "name": "threshold",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34340,
+                        "src": "617:9:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 34351,
+                        "name": "os",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34347,
+                        "src": "585:2:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                          "typeString": "struct OwnersLibrary.OwnersStorage storage pointer"
+                        }
+                      },
+                      "id": 34352,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "588:21:62",
+                      "memberName": "addOwnerWithThreshold",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 34647,
+                      "src": "585:24:62",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_OwnersStorage_$34464_storage_ptr_$_t_address_$_t_uint256_$returns$__$attached_to$_t_struct$_OwnersStorage_$34464_storage_ptr_$",
+                        "typeString": "function (struct OwnersLibrary.OwnersStorage storage pointer,address,uint256)"
+                      }
+                    },
+                    "id": 34355,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "585:42:62",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "functionReturnParameters": 34342,
+                  "id": 34356,
+                  "nodeType": "Return",
+                  "src": "578:49:62"
+                }
+              ]
+            },
+            "functionSelector": "0d582f13",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addOwnerWithThreshold",
+            "nameLocation": "433:21:62",
+            "parameters": {
+              "id": 34341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34338,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "nameLocation": "463:5:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34358,
+                  "src": "455:13:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 34337,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "455:7:62",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 34340,
+                  "mutability": "mutable",
+                  "name": "threshold",
+                  "nameLocation": "478:9:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34358,
+                  "src": "470:17:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34339,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "470:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "454:34:62"
+            },
+            "returnParameters": {
+              "id": 34342,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "498:0:62"
+            },
+            "scope": 34403,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 34377,
+            "nodeType": "FunctionDefinition",
+            "src": "640:176:62",
+            "nodes": [],
+            "body": {
+              "id": 34376,
+              "nodeType": "Block",
+              "src": "693:123:62",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    34367
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 34367,
+                      "mutability": "mutable",
+                      "name": "os",
+                      "nameLocation": "739:2:62",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 34376,
+                      "src": "703:38:62",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                        "typeString": "struct OwnersLibrary.OwnersStorage"
+                      },
+                      "typeName": {
+                        "id": 34366,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 34365,
+                          "name": "OwnersLibrary.OwnersStorage",
+                          "nameLocations": [
+                            "703:13:62",
+                            "717:13:62"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 34464,
+                          "src": "703:27:62"
+                        },
+                        "referencedDeclaration": 34464,
+                        "src": "703:27:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                          "typeString": "struct OwnersLibrary.OwnersStorage"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 34370,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 34368,
+                      "name": "_getOwnersStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 34336,
+                      "src": "744:17:62",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_OwnersStorage_$34464_storage_ptr_$",
+                        "typeString": "function () pure returns (struct OwnersLibrary.OwnersStorage storage pointer)"
+                      }
+                    },
+                    "id": 34369,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "744:19:62",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                      "typeString": "struct OwnersLibrary.OwnersStorage storage pointer"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "703:60:62"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 34373,
+                        "name": "threshold",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34360,
+                        "src": "799:9:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 34371,
+                        "name": "os",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34367,
+                        "src": "780:2:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                          "typeString": "struct OwnersLibrary.OwnersStorage storage pointer"
+                        }
+                      },
+                      "id": 34372,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "783:15:62",
+                      "memberName": "changeThreshold",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 34773,
+                      "src": "780:18:62",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_OwnersStorage_$34464_storage_ptr_$_t_uint256_$returns$__$attached_to$_t_struct$_OwnersStorage_$34464_storage_ptr_$",
+                        "typeString": "function (struct OwnersLibrary.OwnersStorage storage pointer,uint256)"
+                      }
+                    },
+                    "id": 34374,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "780:29:62",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "functionReturnParameters": 34362,
+                  "id": 34375,
+                  "nodeType": "Return",
+                  "src": "773:36:62"
+                }
+              ]
+            },
+            "functionSelector": "694e80c3",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "changeThreshold",
+            "nameLocation": "649:15:62",
+            "parameters": {
+              "id": 34361,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34360,
+                  "mutability": "mutable",
+                  "name": "threshold",
+                  "nameLocation": "673:9:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34377,
+                  "src": "665:17:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34359,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "665:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "664:19:62"
+            },
+            "returnParameters": {
+              "id": 34362,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "693:0:62"
+            },
+            "scope": 34403,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 34402,
+            "nodeType": "FunctionDefinition",
+            "src": "822:220:62",
+            "nodes": [],
+            "body": {
+              "id": 34401,
+              "nodeType": "Block",
+              "src": "905:137:62",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    34390
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 34390,
+                      "mutability": "mutable",
+                      "name": "os",
+                      "nameLocation": "951:2:62",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 34401,
+                      "src": "915:38:62",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                        "typeString": "struct OwnersLibrary.OwnersStorage"
+                      },
+                      "typeName": {
+                        "id": 34389,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 34388,
+                          "name": "OwnersLibrary.OwnersStorage",
+                          "nameLocations": [
+                            "915:13:62",
+                            "929:13:62"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 34464,
+                          "src": "915:27:62"
+                        },
+                        "referencedDeclaration": 34464,
+                        "src": "915:27:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                          "typeString": "struct OwnersLibrary.OwnersStorage"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 34393,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 34391,
+                      "name": "_getOwnersStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 34336,
+                      "src": "956:17:62",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$__$returns$_t_struct$_OwnersStorage_$34464_storage_ptr_$",
+                        "typeString": "function () pure returns (struct OwnersLibrary.OwnersStorage storage pointer)"
+                      }
+                    },
+                    "id": 34392,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "956:19:62",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                      "typeString": "struct OwnersLibrary.OwnersStorage storage pointer"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "915:60:62"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 34396,
+                        "name": "prevOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34379,
+                        "src": "1007:9:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 34397,
+                        "name": "owner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34381,
+                        "src": "1018:5:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 34398,
+                        "name": "threshold",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34383,
+                        "src": "1025:9:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 34394,
+                        "name": "os",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34390,
+                        "src": "992:2:62",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_OwnersStorage_$34464_storage_ptr",
+                          "typeString": "struct OwnersLibrary.OwnersStorage storage pointer"
+                        }
+                      },
+                      "id": 34395,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "995:11:62",
+                      "memberName": "removeOwner",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 34732,
+                      "src": "992:14:62",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_OwnersStorage_$34464_storage_ptr_$_t_address_$_t_address_$_t_uint256_$returns$__$attached_to$_t_struct$_OwnersStorage_$34464_storage_ptr_$",
+                        "typeString": "function (struct OwnersLibrary.OwnersStorage storage pointer,address,address,uint256)"
+                      }
+                    },
+                    "id": 34399,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "992:43:62",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "functionReturnParameters": 34385,
+                  "id": 34400,
+                  "nodeType": "Return",
+                  "src": "985:50:62"
+                }
+              ]
+            },
+            "functionSelector": "f8dc5dd9",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeOwner",
+            "nameLocation": "831:11:62",
+            "parameters": {
+              "id": 34384,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34379,
+                  "mutability": "mutable",
+                  "name": "prevOwner",
+                  "nameLocation": "851:9:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34402,
+                  "src": "843:17:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 34378,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "843:7:62",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 34381,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "nameLocation": "870:5:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34402,
+                  "src": "862:13:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 34380,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "862:7:62",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 34383,
+                  "mutability": "mutable",
+                  "name": "threshold",
+                  "nameLocation": "885:9:62",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 34402,
+                  "src": "877:17:62",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 34382,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "877:7:62",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "842:53:62"
+            },
+            "returnParameters": {
+              "id": 34385,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "905:0:62"
+            },
+            "scope": 34403,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "OwnersConfig",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          34403
+        ],
+        "name": "OwnersConfig",
+        "nameLocation": "128:12:62",
+        "scope": 34404,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  "id": 62
+}
